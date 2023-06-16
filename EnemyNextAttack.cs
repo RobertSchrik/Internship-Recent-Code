@@ -23,15 +23,12 @@ public class EnemyNextAttack : MonoBehaviour
 
     private bool coroutineRunning = false;
 
-
-
-
     private void Start()
     {
         enemyNextAttackBar.maxValue = enemyFullNextAttack;
     }
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //First check, has level concluded.
         if (gameEndState.playerLevelComplete)
@@ -126,7 +123,6 @@ public class EnemyNextAttack : MonoBehaviour
                         StartCoroutine(ExecuteSlasherAbility(enemyManager, slasherAbility));
                     }
                 }
-                ////////
                 if (randomSelectedSkill is BunkerAbility bunkerAbility)
                 {
                     if (!bunkerAbility.isSkillExecuting)
