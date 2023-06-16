@@ -16,7 +16,7 @@ public class DragAndDrop : MonoBehaviour
     private Vector3 offset;
     private Transform originalParent;
     private Vector3 originalPosition;
-    private Collider2D itemCollider; // Store the collider of the item
+    private Collider2D itemCollider;
 
     public void Start()
     {
