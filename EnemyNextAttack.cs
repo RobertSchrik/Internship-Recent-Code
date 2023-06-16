@@ -95,10 +95,10 @@ public class EnemyNextAttack : MonoBehaviour
 
     public void ActiveSkillActivation()
     {
-        if (enemyManager.bossIsHere == false)
+        if (!enemyManager.bossIsHere)
         {
             return;
-        }else if(enemyManager.bossIsHere == true)
+        }else if(enemyManager.bossIsHere)
         {
             int randomIndex = Random.Range(0, enemyManager.activeBossSkillList.Count);
             ScriptableObject randomSelectedSkill = enemyManager.activeBossSkillList[randomIndex];
