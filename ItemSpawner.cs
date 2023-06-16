@@ -59,7 +59,7 @@ public class ItemSpawner : MonoBehaviour
 
         int randomNumber = Random.Range(0, itemManager.mergeRank1.Length);
 
-        //check if there is surfficient mana to be able to spawn the item, reducing the amount of mana from the mana pool and increasing the mana cost
+        //check if there is sufficient mana to be able to spawn the item, reducing the amount of mana from the mana pool and increasing the mana cost
         if (manaManager.manaCount >= currentManaInt)
         {
             int newManaCost = currentManaInt + 5;
